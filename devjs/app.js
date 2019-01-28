@@ -7,8 +7,8 @@ $(document).ready(function(){
     method: 'GET',
     success: function(data){
 
+        primoGrafico(data);
 
-       console.log(data);
 
     },
     error: function(){
@@ -18,3 +18,8 @@ $(document).ready(function(){
   })
 
 })
+
+function primoGrafico(data){
+  var datiGrafico = JSON.parse(data);
+  console.log(datiGrafico);
+}

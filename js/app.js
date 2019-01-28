@@ -100,13 +100,18 @@ $(document).ready(function () {
     url: 'http://localhost/php-chartbool/database.php',
     method: 'GET',
     success: function success(data) {
-      console.log(data);
+      primoGrafico(data);
     },
     error: function error() {
       alert('errore');
     }
   });
 });
+
+function primoGrafico(data) {
+  var datiGrafico = JSON.parse(data);
+  console.log(datiGrafico);
+}
 
 /***/ }),
 
