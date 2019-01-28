@@ -96,7 +96,16 @@
 var $ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
 
 $(document).ready(function () {
-  alert('ciao');
+  $.ajax({
+    url: 'http://localhost/php-chartbool/database.php',
+    method: 'GET',
+    success: function success(data) {
+      console.log(data);
+    },
+    error: function error() {
+      alert('errore');
+    }
+  });
 });
 
 /***/ }),
