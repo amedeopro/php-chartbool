@@ -1,3 +1,7 @@
-// var $ = require('jquery');
+var $ = require('jquery');
 
-alert('ciao');
+$(document).ready(function(){
+
+  alert('ciao');
+  
+})
